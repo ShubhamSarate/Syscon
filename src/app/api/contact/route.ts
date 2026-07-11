@@ -31,6 +31,7 @@ export async function POST(request: Request) {
 
       return NextResponse.json({
         success: true,
+        mock: true,
         message: "Submission received successfully (Mock Mode: SMTP credentials not set).",
         data: { service, name, email, mobile }
       });
@@ -44,6 +45,9 @@ export async function POST(request: Request) {
         user: smtpUser,
         pass: smtpPassword,
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
     const htmlContent = `
@@ -90,6 +94,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
+      mock: false,
       message: "Email sent successfully."
     });
   } catch (error: any) {
