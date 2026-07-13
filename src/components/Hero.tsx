@@ -59,52 +59,52 @@ export default function Hero() {
         </div>
 
         {/* Horizontal Stats Row */}
-        <div className="mt-16 pt-10 border-t border-gray-100 grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex items-center gap-4 group">
-            <div className="w-14 h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="mt-16 pt-10 border-t border-gray-100 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 sm:gap-8">
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 sm:gap-4 group">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
             <div>
-              <h4 className="text-[26px] font-black text-primary leading-none mb-1">28+</h4>
-              <p className="text-gray-500 text-[13px] font-bold leading-tight">Years of Excellence</p>
+              <h4 className="text-[20px] sm:text-[26px] font-black text-primary leading-none mb-1 sm:mb-1.5">28+</h4>
+              <p className="text-gray-500 text-[11px] sm:text-[13px] font-bold leading-tight">Years of Excellence</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-14 h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 sm:gap-4 group">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
             <div>
-              <h4 className="text-[26px] font-black text-primary leading-none mb-1">1000+</h4>
-              <p className="text-gray-500 text-[13px] font-bold leading-tight">Projects Delivered</p>
+              <h4 className="text-[20px] sm:text-[26px] font-black text-primary leading-none mb-1 sm:mb-1.5">1000+</h4>
+              <p className="text-gray-500 text-[11px] sm:text-[13px] font-bold leading-tight">Projects Delivered</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-14 h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 sm:gap-4 group">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V10a2 2 0 00-2-2h-1a2 2 0 00-2-2h-1.5a3 3 0 00-3 3zm3 12.636V18a2 2 0 01-2 2v.945m8-2.945V17a2 2 0 00-2-2h-1a2 2 0 00-2-2v-1a2 2 0 00-2-2" />
               </svg>
             </div>
             <div>
-              <h4 className="text-[26px] font-black text-primary leading-none mb-1">Pan India</h4>
-              <p className="text-gray-500 text-[13px] font-bold leading-tight">Service Network</p>
+              <h4 className="text-[20px] sm:text-[26px] font-black text-primary leading-none mb-1 sm:mb-1.5">Pan India</h4>
+              <p className="text-gray-500 text-[11px] sm:text-[13px] font-bold leading-tight">Service Network</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-14 h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 sm:gap-4 group">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-accent/5 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition duration-300">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
             </div>
             <div>
-              <h4 className="text-[26px] font-black text-primary leading-none mb-1">Remote & Onsite</h4>
-              <p className="text-gray-500 text-[13px] font-bold leading-tight">Support</p>
+              <h4 className="text-[20px] sm:text-[26px] font-black text-primary leading-none mb-1 sm:mb-1.5">Remote & Onsite</h4>
+              <p className="text-gray-500 text-[11px] sm:text-[13px] font-bold leading-tight">Support</p>
             </div>
           </div>
         </div>
