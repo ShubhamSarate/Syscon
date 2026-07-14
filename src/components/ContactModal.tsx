@@ -13,6 +13,20 @@ const SERVICES = [
   "Refurbishing Of Cable",
   "Product-Related Benefits",
   "Free Installation",
+  // Broad Solutions
+  "Networking & Structured Cabling",
+  "Surveillance & Security Systems",
+  "Biometric Attendance Solutions",
+  "Servers & Storage, Data Center",
+  "Virtualization & Cloud Platform",
+  "Computing Devices",
+  "Office Printing Solutions",
+  "Business Software Solutions",
+  "Power Backup Systems",
+  "Commercial Displays",
+  "Laptop Body Fabrication",
+  "AudioVisual Solutions",
+  "IT Hardware Rental",
 ];
 
 export default function ContactModal() {

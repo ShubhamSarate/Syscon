@@ -90,22 +90,22 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6 text-accent">Services</h4>
             <ul className="space-y-3 text-sm text-blue-100">
               <li>
-                <a href="#" className="hover:text-white transition font-medium">
+                <a href="#services" className="hover:text-white transition font-medium">
                   → IT Consulting
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition font-medium">
+                <a href="#services" className="hover:text-white transition font-medium">
                   → IT Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition font-medium">
+                <a href="#services" className="hover:text-white transition font-medium">
                   → AMC & Support
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition font-medium">
+                <a href="#services" className="hover:text-white transition font-medium">
                   → Implementation
                 </a>
               </li>
@@ -117,32 +117,27 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6 text-accent">Get In Touch</h4>
             <ul className="space-y-4 text-sm text-blue-100">
               <li>
-                <strong className="text-white">👤 Proprietor:</strong>
+                <strong className="text-white">👤 Proprietor :</strong>
                 <br />
                 Amitkumaar Jain
               </li>
               <li>
-                <strong className="text-white">📞 Mobile:</strong>
+                <strong className="text-white">📞 Mobile :</strong>
                 <br />
                 +91 9820865540
               </li>
               <li>
-                <strong className="text-white">💬 Tel / WhatsApp:</strong>
+                <strong className="text-white">💬 Telephone :</strong>
                 <br />
                 +91 022 2242 3787
               </li>
               <li>
-                <strong className="text-white">📧 Email:</strong>
+                <strong className="text-white">📧 Email :</strong>
                 <br />
                 <a href="mailto:info@syscontech.net" className="hover:text-accent transition">info@syscontech.net</a>
               </li>
               <li>
-                <strong className="text-white">🌐 Website:</strong>
-                <br />
-                <a href="http://www.syscontech.net" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">www.syscontech.net</a>
-              </li>
-              <li>
-                <strong className="text-white">📍 Address:</strong>
+                <strong className="text-white">📍 Address :</strong>
                 <br />
                 Office no. 42, 3rd Floor, Navyug House,<br />
                 14 Old Hanuman Lane, Kalbadevi,<br />

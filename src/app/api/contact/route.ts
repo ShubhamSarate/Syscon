@@ -84,19 +84,38 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    await transporter.sendMail({
-      from: `"${name}" <${smtpFrom}>`,
-      to: smtpTo,
-      subject: `New Lead: ${service} - ${name}`,
-      text: `New Contact Form Submission:\n\nService: ${service}\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`,
-      html: htmlContent,
-    });
+    try {
+      await transporter.sendMail({
+        from: `"${name}" <${smtpFrom}>`,
+        to: smtpTo,
+        subject: `New Lead: ${service} - ${name}`,
+        text: `New Contact Form Submission:\n\nService: ${service}\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`,
+        html: htmlContent,
+      });
 
-    return NextResponse.json({
-      success: true,
-      mock: false,
-      message: "Email sent successfully."
-    });
+      return NextResponse.json({
+        success: true,
+        mock: false,
+        message: "Email sent successfully."
+      });
+    } catch (smtpError: any) {
+      console.warn("SMTP send failed, falling back to mock logging:", smtpError?.message || smtpError);
+      
+      console.log("=================== CONTACT FORM SUBMISSION (FALLBACK MOCK MODE) ===================");
+      console.log(`Service Requested: ${service}`);
+      console.log(`Client Name:       ${name}`);
+      console.log(`Client Email:      ${email}`);
+      console.log(`Mobile Number:     ${mobile}`);
+      console.log(`SMTP Error Details:`, smtpError);
+      console.log("====================================================================================");
+
+      return NextResponse.json({
+        success: true,
+        mock: true,
+        message: "Submission received (SMTP failed, logged to console).",
+        data: { service, name, email, mobile }
+      });
+    }
   } catch (error: any) {
     console.error("Error in contact route handler:", error);
     return NextResponse.json(

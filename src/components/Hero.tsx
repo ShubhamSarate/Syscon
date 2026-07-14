@@ -1,8 +1,12 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
   const handleTalkToExpert = () => {
-    window.dispatchEvent(new Event("open-contact-modal"));
+    const phoneNumber = "919820865540";
+    const message = "Hello! I would like to talk to an expert about SYSCON IT services.";
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -33,10 +37,13 @@ export default function Hero() {
                 💬 Talk to an Expert
                 <span>→</span>
               </button>
-              <button className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition transform hover:-translate-y-1 inline-flex items-center gap-2 justify-center">
+              <Link
+                href="/solutions"
+                className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition transform hover:-translate-y-1 inline-flex items-center gap-2 justify-center cursor-pointer select-none"
+              >
                 🚀 Explore Solutions
                 <span>→</span>
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -45,7 +52,7 @@ export default function Hero() {
             <div className="relative w-full max-w-md md:max-w-none">
               {/* Animated background gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-purple-100 to-pink-100 rounded-3xl blur-3xl opacity-60 -z-10 animate-pulse"></div>
-              
+
               {/* Main 3D City Illustration Image */}
               <div className="relative rounded-[24px] overflow-hidden shadow-2xl border border-blue-100/50 bg-white">
                 <img

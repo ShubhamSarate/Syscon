@@ -16,6 +16,10 @@ export default function Header() {
       window.location.href = "/about";
       return;
     }
+    if (id === "solutions") {
+      window.location.href = "/solutions";
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -52,49 +56,49 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               About Us
             </Link>
             <button
               onClick={() => handleNavClick("services")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Services
             </button>
             <button
               onClick={() => handleNavClick("solutions")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Solutions
             </button>
             <button
               onClick={() => handleNavClick("industries")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Industries
             </button>
             <button
               onClick={() => handleNavClick("projects")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Projects
             </button>
             <button
               onClick={() => handleNavClick("support")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Support
             </button>
             <button
               onClick={() => handleNavClick("contact")}
-              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px]"
+              className="text-gray-700 hover:text-primary font-semibold transition cursor-pointer text-[16px] relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
             >
               Contact
             </button>
@@ -103,10 +107,10 @@ export default function Header() {
           {/* CTA Button */}
           <button
             onClick={() => handleNavClick("contact")}
-            className="hidden lg:block bg-gradient-to-r from-primary to-blue-900 text-white px-6 py-3.5 rounded-full font-bold hover:shadow-lg hover:shadow-primary/50 transition transform hover:-translate-y-1 flex items-center gap-2 cursor-pointer text-[15px]"
+            className="hidden lg:block bg-gradient-to-r from-primary to-blue-900 text-white px-6 py-3.5 rounded-full font-bold hover:shadow-lg hover:shadow-primary/50 transition transform hover:-translate-y-1 flex items-center gap-2 cursor-pointer text-[15px] group"
           >
             Get a Quote
-            <span>→</span>
+            <span className="transition-transform group-hover:translate-x-1 duration-300">→</span>
           </button>
 
           {/* Mobile Menu Button */}
@@ -137,58 +141,58 @@ export default function Header() {
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Home
             </Link>
             <Link
               href="/about"
               onClick={() => setIsOpen(false)}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               About Us
             </Link>
             <button
               onClick={() => handleNavClick("services")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Services
             </button>
             <button
               onClick={() => handleNavClick("solutions")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Solutions
             </button>
             <button
               onClick={() => handleNavClick("industries")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Industries
             </button>
             <button
               onClick={() => handleNavClick("projects")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Projects
             </button>
             <button
               onClick={() => handleNavClick("support")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Support
             </button>
             <button
               onClick={() => handleNavClick("contact")}
-              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
+              className="text-gray-700 hover:text-primary text-[16px] font-semibold transition transform hover:translate-x-1 duration-200 text-left hover:bg-blue-50 px-3 py-2 rounded-lg"
             >
               Contact
             </button>
             <button
               onClick={() => handleNavClick("contact")}
-              className="bg-gradient-to-r from-primary to-blue-900 text-white px-6 py-3.5 rounded-full font-bold w-full hover:shadow-lg hover:shadow-primary/50 transition mt-2 text-center text-[15px]"
+              className="bg-gradient-to-r from-primary to-blue-900 text-white px-6 py-3.5 rounded-full font-bold w-full hover:shadow-lg hover:shadow-primary/50 transition mt-2 text-center text-[15px] group"
             >
-              Get a Quote →
+              Get a Quote <span className="inline-block transition-transform group-hover:translate-x-1 duration-300">→</span>
             </button>
           </nav>
         )}
