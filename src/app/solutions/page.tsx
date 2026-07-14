@@ -250,14 +250,14 @@ export default function SolutionsPage() {
         </section>
 
         {/* Filter Navigation */}
-        <section className="py-10 bg-white border-b border-gray-100 sticky top-20 z-40">
+        <section className="py-6 bg-white border-b border-gray-100 sticky top-20 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+            <div className="flex flex-nowrap overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 gap-3 justify-start lg:justify-start [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {CATEGORIES.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-6 py-3 rounded-full text-sm font-bold transition transform active:scale-95 cursor-pointer ${
+                  className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition transform active:scale-95 cursor-pointer whitespace-nowrap flex-shrink-0 ${
                     activeCategory === cat.id
                       ? "bg-primary text-white shadow-lg shadow-primary/25"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-transparent"
