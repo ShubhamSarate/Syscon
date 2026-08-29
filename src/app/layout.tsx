@@ -3,9 +3,9 @@ import "./globals.css";
 import ContactModal from "@/components/ContactModal";
 
 export const metadata: Metadata = {
-  title: "SYSCON - Technology Solutions That Power Progress",
+  title: "SYSCON - We Keep Your Business Running",
   description:
-    "SYSCON provides comprehensive IT solutions including infrastructure, security, and services across India.",
+    "Syscon Computer Systems provides complete IT infrastructure, technology solutions and support for businesses.",
 };
 
 export default function RootLayout({
