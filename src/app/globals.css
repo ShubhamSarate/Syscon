@@ -13,3 +13,54 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+.brand-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.brand-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 2rem;
+  animation: marquee 26s linear infinite;
+  will-change: transform;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  color: #9ca3af;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.brand-item:hover {
+  color: #0f172a;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-track {
+    gap: 1.25rem;
+  }
+
+  .brand-item {
+    font-size: 0.75rem;
+  }
+}

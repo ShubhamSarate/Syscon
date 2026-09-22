@@ -25,7 +25,7 @@ export default function StoreLocation() {
         <div className="grid md:grid-cols-5 gap-10 items-stretch">
           <div className="md:col-span-2 bg-[#f5f6f8] rounded-3xl p-8 flex flex-col justify-between border border-gray-200/50 shadow-sm">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-6">Store Address</h3>
+              <h3 className="text-2xl font-bold text-primary mb-6">Corporate Office</h3>
 
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -85,7 +85,7 @@ export default function StoreLocation() {
               className="absolute inset-0 w-full h-full border-0"
               allowFullScreen
               loading="lazy"
-              title="SYSCON Store Location Map"
+              title="SYSCON Corporate Office Map"
             ></iframe>
           </div>
         </div>

@@ -98,22 +98,57 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-4 bg-[#f8f9fa] border border-gray-200/60 rounded-[32px] p-8 shadow-sm flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full bg-primary/5 border border-primary/10 flex items-center justify-center mb-6">
-                  <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-extrabold text-primary mb-1">Amitkumaar Jain</h3>
-                <p className="text-accent font-black text-xs uppercase tracking-wider mb-4">Founder</p>
-                <div className="border-t border-gray-200 w-full pt-4 space-y-2 text-sm font-semibold text-gray-500">
-                  <p>Location: Mumbai, Maharashtra</p>
-                  <p>Experience: 25+ Years</p>
-                  <p>Focus: Reliable Technology & Support</p>
+              <div className="lg:col-span-4 space-y-6">
+                <div className="relative overflow-hidden rounded-[32px] border border-gray-200/60 shadow-sm min-h-[420px] lg:min-h-[500px] lg:max-w-[420px] lg:justify-self-center bg-[#071420]">
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: "url('/image/1000356605.jpg')",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      filter: "brightness(0.72) contrast(1.08) saturate(0.9)",
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071420]/90 via-[#071420]/55 to-[#071420]/15" />
+                  <div className="relative z-10 flex h-full min-h-[420px] lg:min-h-[500px] flex-col justify-end p-7 lg:p-8 text-white text-center">
+                    <h3 className="text-3xl font-extrabold text-white mb-1">Amitkumar Jain</h3>
+                    <p className="text-[#dfeaf7] font-black text-xs uppercase tracking-[0.22em] mb-5">Founder</p>
+
+                    <div className="space-y-2 border-t border-white/20 pt-4 text-sm font-semibold text-gray-100/95 text-left">
+                      <p>Location: Mumbai, Maharashtra</p>
+                      <p>Experience: 25+ Years</p>
+                      <p>Focus: Reliable Technology & Support</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-4 space-y-6">
+                <div className="relative overflow-hidden rounded-[32px] border border-gray-200/60 shadow-sm min-h-[420px] lg:min-h-[500px] lg:max-w-[420px] lg:justify-self-center bg-[#071420]">
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: "url('/image/1000356603.jpg')",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      filter: "brightness(0.72) contrast(1.08) saturate(0.9)",
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071420]/90 via-[#071420]/55 to-[#071420]/15" />
+                  <div className="relative z-10 flex h-full min-h-[420px] lg:min-h-[500px] flex-col justify-end p-7 lg:p-8 text-white text-center">
+                    <h3 className="text-3xl font-extrabold text-white mb-1">Jigar Vakharia</h3>
+                    <p className="text-[#dfeaf7] font-black text-xs uppercase tracking-[0.22em] mb-5">Founder</p>
+
+                    <div className="space-y-2 border-t border-white/20 pt-4 text-sm font-semibold text-gray-100/95 text-left">
+                      <p>Location: Mumbai, Maharashtra</p>
+                      <p>Experience: 25+ Years</p>
+                      <p>Focus: Reliable Technology & Support</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-4">
                 <h2 className="text-[16px] font-black text-[#d64545] uppercase tracking-[0.25em] mb-4">
                   Leadership Profile
                 </h2>
@@ -122,7 +157,7 @@ export default function AboutPage() {
                 </h3>
                 <div className="space-y-6 text-gray-650 text-[15px] leading-relaxed font-medium">
                   <p>
-                    Amitkumaar Jain founded Syscon Computer Systems in 2000 with a strong focus on customer service, reliable technology and long-term business relationships.
+                    Jigar Vakharia & Amit Kumar founded Syscon Computer Systems in 2000 with a strong focus on customer service, reliable technology and long-term business relationships.
                   </p>
                   <p>
                     Over the years, he has guided Syscon through significant changes in business technology, from traditional computing and networking to cloud, security and integrated IT infrastructure.
