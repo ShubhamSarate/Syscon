@@ -1,22 +1,26 @@
 export default function Partners() {
   const brands = [
-    "DELL",
-    "LENOVO",
-    "HP",
-    "CISCO",
-    "SOPHOS",
-    "D-LINK",
-    "TP-LINK",
-    "HIK VISION",
-    "CP PLUS",
-    "DAHUA",
-    "TALLY",
-    "SEAGATE",
-    "WD",
-    "MICROSOFT",
-    "QUICK HEAL",
-    "COREL",
-    "PHOTOSHOP",
+    { name: "Dell", logo: "https://cdn.simpleicons.org/dell/007DB8" },
+    { name: "Lenovo", logo: "https://cdn.simpleicons.org/lenovo/E2231A" },
+    { name: "HP", logo: "https://cdn.simpleicons.org/hp/0096D6" },
+    { name: "Cisco", logo: "https://cdn.simpleicons.org/cisco/049FD9" },
+    { name: "Sophos", logo: "https://cdn.simpleicons.org/sophos/006FBB" },
+    { name: "D-Link", logo: "https://www.google.com/s2/favicons?domain=dlink.com&sz=128" },
+    { name: "TP-Link", logo: "https://cdn.simpleicons.org/tplink/4ACBD6" },
+    { name: "Hikvision", logo: "https://www.google.com/s2/favicons?domain=hikvision.com&sz=128" },
+    { name: "CP Plus", logo: "https://www.google.com/s2/favicons?domain=cpplusworld.com&sz=128" },
+    { name: "Dahua", logo: "https://www.google.com/s2/favicons?domain=dahuasecurity.com&sz=128" },
+    { name: "Tally", logo: "https://www.google.com/s2/favicons?domain=tallysolutions.com&sz=128" },
+    { name: "Seagate", logo: "https://cdn.simpleicons.org/seagate/6EBE49" },
+    { name: "WD", logo: "https://www.google.com/s2/favicons?domain=westerndigital.com&sz=128" },
+    { name: "Microsoft", logo: "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128" },
+    { name: "Quick Heal", logo: "https://www.google.com/s2/favicons?domain=quickheal.com&sz=128" },
+    { name: "Corel", logo: "https://cdn.simpleicons.org/corel/0084D6" },
+    { name: "Photoshop", logo: "https://cdn.simpleicons.org/adobephotoshop/31A8FF" },
+    { name: "Digisol", logo: "https://www.google.com/s2/favicons?domain=digisol.com&sz=128" },
+    { name: "Samsung", logo: "https://cdn.simpleicons.org/samsung/1428A0" },
+    { name: "Godrej", logo: "https://www.godrej.com/resources/logo.png" },
+    { name: "Hewlett Packard Enterprise", logo: "https://www.google.com/s2/favicons?domain=hpe.com&sz=128" },
   ];
 
   return (
@@ -33,7 +37,13 @@ export default function Partners() {
               <div className="brand-track">
                 {[...brands, ...brands].map((brand, index) => (
                   <span key={`${brand}-${index}`} className="brand-item">
-                    {brand}
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      title={brand.name}
+                      loading="lazy"
+                      className={`${brand.name === "Samsung" ? "h-14 w-14" : "h-10 w-auto max-w-[88px]"} object-contain opacity-75 transition duration-300 hover:scale-110 hover:opacity-100`}
+                    />
                   </span>
                 ))}
               </div>

@@ -1,11 +1,12 @@
 "use client";
 
 export default function StoreLocation() {
-  const mapQuery = encodeURIComponent(
-    "Office no. 42, 3rd Floor, Navyug House, 14 Old Hanuman Lane, Kalbadevi, Mumbai - 400 002"
-  );
+  const storeAddress =
+    "Syscon Computer Systems, 14 Old Hanuman Lane, Navyug House Bldg, 3rd Floor, Office No 42, Mangaldas Market, Kalbadevi Road, Hedgewar Chowk-Kalbadevi, Mumbai-400002, Maharashtra";
+  const mapQuery = encodeURIComponent(storeAddress);
   const mapUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
-  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;
+  const directionsUrl =
+    "https://www.google.com/maps/place/Syscon+Computer+Systems/@18.9485032,72.8287204,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x3be7ce221d09695d:0xd8beb7f8389c58e9!2sSyscon+Computer+Systems,+Office+no.+42,+3rd+Floor,+Navyug+House,+Old+Hanuman+Lane+10%2F18,+Dhirubhai,+Nathalal+Parikh+Marg,+Kalbadevi,+Mumbai,+Maharashtra+400002!2m2!1d72.8312953!2d18.9485032!3m5!1s0x3be7ce221d09695d:0xd8beb7f8389c58e9!8m2!3d18.9485032!4d72.8312953!16s%2Fg%2F11hyn8r1x3?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D";
 
   return (
     <section id="location" className="py-20 bg-white border-t border-gray-100">
@@ -33,10 +34,7 @@ export default function StoreLocation() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                     <p className="text-gray-600 leading-relaxed text-sm">
-                      Syscon Computer Systems,<br />
-                      Office no. 42, 3rd Floor, Navyug House,<br />
-                      14 Old Hanuman Lane, Kalbadevi,<br />
-                      Mumbai - 400 002
+                      {storeAddress}
                     </p>
                   </div>
                 </div>
